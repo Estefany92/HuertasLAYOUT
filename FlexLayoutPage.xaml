@@ -4,14 +4,44 @@
              x:Class="HuertasLAYOUT.FlexLayoutPage"
              Title="FlexLayoutPage">
     <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+        <FlexLayout
+            Direction="Row"
+            Wrap="Wrap"
+            JustifyContent="Start"
+            AlignItems="Start">
+
+            <Button
+                x:Name="Boton1"
+                Text="Botón 1"
+                WidthRequest="100"
+                HeightRequest="50"
+                Clicked="Boton1_Clicked"/>
+
+            <Button
+                x:Name="Boton2"
+                Text="Botón 2"
+                WidthRequest="100"
+                HeightRequest="50"
+                Clicked="Boton2_Clicked"/>
+
+            <Button
+                x:Name="Boton3"
+                Text="Botón 3"
+                WidthRequest="100"
+                HeightRequest="50"
+                Clicked="Boton3_Clicked"/>
+
+            <Button
+                x:Name="Boton4"
+                Text="Botón 4"
+                WidthRequest="100"
+                HeightRequest="50"
+                Clicked="Boton4_Clicked"/>
+        </FlexLayout>
+
         <Button
-            x:Name="Regresar"
-            Text="BotonRegresar"
-            Clicked="Regresar_Clicked"
-             />
+            x:Name="IrAAbsolute"
+            Text="Ir a Absolute Layout"
+            Clicked="IrAAbsoluteClicked"/>
     </VerticalStackLayout>
 </ContentPage>
